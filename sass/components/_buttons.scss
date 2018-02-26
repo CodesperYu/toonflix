@@ -1,3 +1,5 @@
+//main button
+
 .btn {
 	&:link,
 	&:visited {
@@ -45,5 +47,27 @@
 	&--animated {
 		animation: moveInBottom .5s .25s;
 		animation-fill-mode: backwards;
+	}
+}
+
+//learn more button
+
+.btn-text{
+	&:link,
+	&:visited {
+		color: $color-primary-dark;
+		display: inline-block;
+		text-decoration: none;
+		border-bottom: 1px solid $color-primary-dark;
+	}
+
+	&:hover {
+		background-color: $color-primary-dark;
+		color: $color-white;
+		box-shadow: 0 1rem 2rem rgba($color-black, .20);
+	}
+
+	&.active{
+		color:red;
 	}
 }

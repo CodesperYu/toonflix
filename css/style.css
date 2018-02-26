@@ -72,7 +72,7 @@ body {
   text-decoration: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-image: linear-gradient(to right, #E6E6FA, #9400D3);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .5rem;
@@ -80,11 +80,27 @@ body {
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1); }
 
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 2rem; }
+
 .u-center-text {
   text-align: center; }
 
-.u-margin-8 {
+.u-margin-bottom-large {
   margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
 
 .section-about {
   background-color: #f7f7f7;
@@ -93,7 +109,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(230, 230, 250, 0.8), rgba(148, 0, 211, 0.8)), url(../img/simpsons-tv.jpeg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -103,7 +119,8 @@ body {
     top: 4rem;
     left: 4rem; }
   .header__logo {
-    height: 3.5rem; }
+    height: 5rem;
+    filter: brightness(0) invert(1); }
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -111,6 +128,32 @@ body {
     transform: translate(-50%, -50%);
     /* sets the button text to the middle */
     text-align: center; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .row [class^=col-] {
+    float: left; }
+    .row [class^=col-]:not(:last-child) {
+      margin-right: 2rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 2rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * gutter-horizontal) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 2rem) / 3) + 2rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 2rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 2rem) / 4) + 2rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 2rem) / 4) + 2 * 2rem); }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -155,6 +198,24 @@ body {
 .btn--animated {
   animation: moveInBottom .5s .25s;
   animation-fill-mode: backwards; }
+
+.btn-text:link, .btn-text:visited {
+  color: #9400D3;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #9400D3; }
+
+.btn-text:hover {
+  background-color: #9400D3;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn-text.active {
+  color: red; }
+
+.composition__photo {
+  width: 55%;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.4); }
 
 /*
 COLORS:

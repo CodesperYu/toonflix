@@ -1,6 +1,9 @@
 .header {
 	height: 95vh;
-	background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url(../img/hero.jpg);
+	background-image: linear-gradient(to right bottom, 
+		rgba($color-primary-light, 0.8), 
+		rgba($color-primary-dark, 0.8)), 
+		url(../img/simpsons-tv.jpeg);
 	background-size: cover;
 	background-position: top;
 	position: relative;
@@ -11,7 +14,8 @@
 		left: 4rem;
 	}
 	&__logo {
-		height: 3.5rem;
+		height: 5rem;
+		filter: brightness(0) invert(1);
 	} //heading
 	&__text-box {
 		position: absolute;
