@@ -12,6 +12,7 @@
 @import "layout/header";
 @import "layout/grid";
 
+@import "components/feature-box";
 @import "components/buttons";
 @import "components/composition";
 
@@ -23,27 +24,5 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
-
-*,
-*::after,
-*::before {
-	margin: 0;
-	padding: 0;
-	box-sizing: inherit;
-}
-
-html {
-	font-size: 62.5%;
-}
-
-body {
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
-	font-size: $default-font-size;
-	line-height: 1.7;
-	color: $color-grey-dark;
-	padding: 3rem;
-	box-sizing: border-box;
-}
 
 

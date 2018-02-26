@@ -7,12 +7,10 @@
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "repository": {
-    "type": "git",
+    "type": "git"
   },
   "author": "",
   "license": "ISC",
-    "jquery": "^3.3.1"
-  },
   "devDependencies": {
     "node-sass": "^4.7.2"
   }
