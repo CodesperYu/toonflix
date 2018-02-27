@@ -127,7 +127,8 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -235,6 +236,7 @@ body {
   color: #9400D3;
   display: inline-block;
   text-decoration: none;
+  transition: all .3s;
   border-bottom: 1px solid #9400D3; }
 
 .btn-text:hover {
@@ -279,7 +281,6 @@ body {
   height: 50rem;
   position: relative; }
   .card__side {
-    color: #fff;
     height: 50rem;
     transition: all .8s ease;
     font-size: 2rem;
@@ -289,17 +290,86 @@ body {
     left: 0;
     backface-visibility: hidden;
     border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+    overflow: hidden; }
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+        background-image: linear-gradient(to right bottom, #FFB6C1, #FF1493); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #fafca5, #ffd000); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #7f7fff, #0000ff); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
+  .card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: color;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card__picture--1 {
+      background-image: linear-gradient(to right bottom, #FFB6C1, #FF1493), url(../img/todomatsu.jpg); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #fafca5, #ffd000), url(../img/jyushi-happy.jpg); }
+    .card__picture--3 {
+      background-image: linear-gradient(#7f7fff, #0000ff), url(../img/karamatsu.jpg); }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    overflow: hidden;
+    top: 15rem;
+    left: -4rem;
+    width: 75%; }
+  .card__heading-span--1 {
+    padding: 1rem 1.5rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    background-image: linear-gradient(to right bottom, rgba(255, 182, 193, 0.9), rgba(255, 20, 147, 0.9)); }
+  .card__heading-span--2 {
+    padding: 1rem 1.5rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    background-image: linear-gradient(to right bottom, rgba(250, 252, 165, 0.9), rgba(255, 208, 0, 0.9)); }
+  .card__heading-span--3 {
+    padding: 1rem 1.5rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    background-image: linear-gradient(to right bottom, rgba(127, 127, 255, 0.9), rgba(0, 0, 255, 0.9)); }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #dbd5d5; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem; }
+  .card__price-value {
+    font-size: 4rem;
+    font-weight: 100; }
 
 /*
 COLORS:
