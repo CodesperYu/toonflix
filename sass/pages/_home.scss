@@ -23,6 +23,35 @@
 
 .section-plans{
 	background-color: $color-grey-light-1;
-	padding: 25rem 0 50rem 0;
+	padding: 25rem 0 16rem 0;
 	margin-top: -10rem;
+}
+
+.section-stories{
+	position: relative;
+	// background-color: $color-grey-light-1;
+	padding: 15rem 0;
+}
+
+.section-newsletter{
+	padding: 20rem 10rem;
+	background-image: linear-gradient(
+		to bottom right, 
+		$color-primary-light, 
+		$color-primary-dark
+	);
+}
+
+.newsletter {
+	background-image: linear-gradient(
+		105deg, 
+		rgba($color-white, .9) 50%, 
+		rgba($color-white, .9) 50%,
+		transparent 50%),
+		url("../../img/futurama-space.jpg");
+	background-size: 100%;
+	border-radius: 3px;
+	padding: 2rem 2rem;
+	box-shadow: 0 1.5rem 4rem rgba($color-black, .40);
+	height: 50rem;
 }
