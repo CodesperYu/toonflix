@@ -5,10 +5,12 @@
 - pricing
 - subscription box
 - pseudo reviews
+-navigation
 
 #upcoming
 
-- navigation bar
+- more mobile friendly
+- implement react
 - other css effects
 
 site: https://boiling-badlands-77858.herokuapp.com/
