@@ -5,24 +5,32 @@
 		rgba($color-primary-dark, 0.8)), 
 		url(../img/simpsons-tv.jpeg);
 	background-size: cover;
-	background-position: top;
 	position: relative;
 	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); // logo
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+	
+	// logo container (positioning)
+	
 	&__logo-box {
 		position: absolute;
 		top: 4rem;
 		left: 4rem;
 	}
+
+	//logo image
+
 	&__logo {
 		height: 5rem;
-		filter: brightness(0) invert(1);
+		filter: invert(1);
 	} //heading
+	
 	&__text-box {
+
 		position: absolute;
 		top: 40%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+
 		/* sets the button text to the middle */
 		text-align: center;
 	}

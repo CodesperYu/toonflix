@@ -15,7 +15,7 @@
 
 	transform:skewY(-5deg);
 
-	//selects its child, which is row
+	//selects all DIRECT childs from section features
 	& > * {
 		transform:skewY(5deg);
 	}
@@ -49,6 +49,7 @@
 		rgba($color-white, .9) 50%,
 		transparent 50%),
 		url("../../img/futurama-space.jpg");
+	background-repeat: no-repeat;
 	background-size: 100%;
 	border-radius: 3px;
 	padding: 2rem 2rem;
